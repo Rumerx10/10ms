@@ -1,4 +1,5 @@
 // components/Instructor.tsx
+import Image from 'next/image';
 import React from 'react';
 
 const Instructor: React.FC = () => {
@@ -11,14 +12,11 @@ const Instructor: React.FC = () => {
             <div>
               <div className="rounded-[50%] overflow-hidden opacity-100 transition-opacity duration-300 ease-in-out" style={{ fontSize: '0px', opacity: 1 }}>
                 {/* Image for the instructor */}
-                <img
+                <Image
                   alt="Instructor Munzereen Shahid"
-                  src="https://cdn.10minuteschool.com/images/skills/lp/ms_onset.jpg"
-                  loading="lazy"
+                  src="/Munzereen.jpg"
                   width={73}
-                  height={73}
-                  decoding="async"
-                  style={{ color: 'transparent' }}
+                  height={73}    
                 />
               </div>
             </div>

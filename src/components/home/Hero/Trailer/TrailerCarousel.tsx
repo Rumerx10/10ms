@@ -11,6 +11,7 @@ import type { Swiper as SwiperType } from 'swiper/types';
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io';
 import VideoPlayer from './VideoPlayer';
 import PlayIconSmSvg from '@/svg/PlayIconSmSvg';
+import Image from 'next/image';
 
 const TrailerCarousel = () => {
   const media = [
@@ -18,7 +19,7 @@ const TrailerCarousel = () => {
       name: 'preview_gallery',
       resource_type: 'video',
       resource_value: 'zrlYnaZftEQ',
-      thumbnail_url: 'https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png',
+      thumbnail_url: '/trailer/1.jpg',
     },
     {
       name: 'preview_gallery',
@@ -26,7 +27,7 @@ const TrailerCarousel = () => {
       resource_value:
         'https://cdn.10minuteschool.com/images/catalog/media/PDP_Banner-1_1726737298483.png',
       thumbnail_url:
-        'https://cdn.10minuteschool.com/images/catalog/media/PDP_Banner-1_1726737298483.png',
+        '/trailer/2.jpg',
     },
     {
       name: 'preview_gallery',
@@ -34,28 +35,28 @@ const TrailerCarousel = () => {
       resource_value:
         'https://cdn.10minuteschool.com/images/catalog/media/PDP_Banner-2_1726736040872.png',
       thumbnail_url:
-        'https://cdn.10minuteschool.com/images/catalog/media/PDP_Banner-2_1726736040872.png',
+        '/trailer/3.jpg',
     },
     {
       name: 'preview_gallery',
       resource_type: 'video',
       resource_value: '30y-wlDtIIQ',
       thumbnail_url:
-        'https://cdn.10minuteschool.com/images/catalog/media/introduction_1706097447220.jpg',
+        '/trailer/4.jpg'
     },
     {
       name: 'preview_gallery',
       resource_type: 'video',
       resource_value: 'QBz8FX4GE_w',
       thumbnail_url:
-        'https://cdn.10minuteschool.com/images/catalog/media/QBz8FX4GE_w-HD_1718880944063.jpg',
+        '/trailer/5.jpg'
     },
     {
       name: 'preview_gallery',
       resource_type: 'video',
       resource_value: 'AvB2ibYd1z4',
       thumbnail_url:
-        'https://cdn.10minuteschool.com/images/catalog/media/AvB2ibYd1z4-HD_1707647843136.jpg',
+        '/trailer/6.jpg'
     },
   ];
 
@@ -86,7 +87,7 @@ const TrailerCarousel = () => {
                           videoPoster={item.thumbnail_url}
                         />
                       ) : (
-                        <img alt={item.name} src={item.thumbnail_url || '/default-thumbnail.png'} />
+                        <Image height={224} width={390} alt={item.name} src={item.thumbnail_url || '/placeholder.svg'} />
                       )}
                     </SwiperSlide>
                   ))}
@@ -136,8 +137,10 @@ const TrailerCarousel = () => {
                             </div>
                           </div>
                         )}
-                        <img
-                          src={item.thumbnail_url || '/default-thumbnail.png'}
+                        <Image
+                          height={32}
+                          width={56}
+                          src={item.thumbnail_url || '/placeholder.svg'}
                           className="w-full h-full object-cover"
                           alt={item.name}
                         />

@@ -9,7 +9,7 @@ import React from 'react';
 
 const DesktopNav: React.FC = () => {
   return (
-    <div className='fixed z-50 left-0 top-0 right-0 h-16 flex w-full items-center justify-center'>
+    <div className='fixed z-50 left-0 -top-1 md:top-0 right-0 h-16 flex w-full items-center justify-center'>
       <div className="flex max-w-[1440px] w-full bg-white items-center justify-between gap-3 px-4 py-3 md:px-7">
         <div className="flex gap-2">
           {/* Mobile menu toggle button (hidden on desktop) */}

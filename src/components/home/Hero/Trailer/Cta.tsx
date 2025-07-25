@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Cta = () => {
+const Cta = ({ showCta }: { showCta?: boolean }) => {
   return (
-    <div className="w-full p-4 md:h-auto" id="variant">
-      <div className="relative md:static">
+    <div
+      className={`w-full p-4 md:h-auto ${showCta ? 'fixed lg:hidden bottom-0 left-0 right-0 bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1),0_-2px_4px_-1px_rgba(0,0,0,0.06)]' : 'hidden lg:block'}`}
+      id="variant"
+    >
+      <div className="relative">
         <div>
           <div className="flex flex-col w-full">
             <div>
@@ -38,9 +41,6 @@ const Cta = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="absolute md:static top-[-45px] left-0">
-          <div></div>
         </div>
       </div>
     </div>

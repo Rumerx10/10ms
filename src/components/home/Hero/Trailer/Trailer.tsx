@@ -22,25 +22,3 @@ const Trailer = () => {
 };
 
 export default Trailer;
-
-{
-  /* <div className="thumb-wrap border-red-500 border-2">
-  <div>
-    <div
-      className="overflow-hidden opacity-100 transition-opacity duration-300 ease-in-out"
-      style={{ fontSize: '0px', objectFit: 'cover', opacity: 1 }}
-    >
-      <img
-        alt="IELTS Course by Munzereen Shahid"
-        src="https://cdn.10minuteschool.com/images/thumbnails/IELTS_new_16_9.png"
-        fetchPriority="high"
-        width="867"
-        height="480"
-        decoding="async"
-        className="w-full"
-        style={{ color: 'transparent' }}
-      />
-    </div>
-  </div>
-</div> */
-}

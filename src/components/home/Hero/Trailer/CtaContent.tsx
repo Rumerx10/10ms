@@ -8,8 +8,8 @@ const CtaContent = () => {
           <div>
             <div className="flex items-center justify-between md:flex-col md:items-start">
               <div className="md:mb-3 flex items-center">
-                <div className="inline-block text-2xl font-semibold">৳3850</div>
-                <del className="ml-2 text-base font-normal md:text-xl">৳5000</del>
+                <div className="inline-block text-2xl font-semibold">৳1000</div>
+                <del className="ml-2 text-base font-normal md:text-xl">৳500</del>
                 <div className="ml-1">
                   <div className="relative flex items-center">
                     <div
@@ -19,7 +19,7 @@ const CtaContent = () => {
                           border-b-[12px] border-b-transparent"
                     ></div>
                     <div className="flex font-semibold gap-2 bg-[#F97B53] text-white h-6 items-center rounded-r-sm px-2 text-sm">
-                      1150 ৳ ছাড়
+                      500 ৳ ছাড়
                     </div>
 
                     <div className="absolute left-2.5 bottom-1.5 w-1 h-1 bg-white rounded-full" />

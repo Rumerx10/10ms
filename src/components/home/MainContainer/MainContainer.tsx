@@ -29,10 +29,10 @@ const MainContainer = () => {
   }, []);
 
   return (
-    <section className="w-full flex items-start justify-center">
+    <section className="w-full pb-5 lg:pb-20 flex items-start justify-center">
       <div className="container flex gap-12" ref={containerRef}>
         {/* Left */}
-        <div className="max-w-[720px] w-full">
+        <div className="md:max-w-[504px] lg:max-w-[720px] w-full">
           <SectionSwitch />
           <Instructor />
           <HowTheCourseLaidOut />
@@ -45,7 +45,7 @@ const MainContainer = () => {
         {/* Right */}
         <div
           ref={sidebarRef}
-          className={`w-[398px] hidden md:block transition-opacity duration-300 ${
+          className={`hidden md:block w-[398px] transition-opacity duration-300 ${
             showSidebar ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >

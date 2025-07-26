@@ -14,7 +14,7 @@ const pointers = [
 
 const Learnings = () => {
   return (
-    <section id="pointers" className="mb-6 md:mb-10 bg-[#E5E7EB] md:bg-white py-6 md:py-0">
+    <section id="pointers" className="mb-6 md:mb-10 bg-[#E5E7EB] md:bg-white py-2 lg:py-6 md:py-0">
       <div className="bg-white pt-6 pb-6 md:pt-0 md:pb-0">
         <div>
           <h2 className="mb-4 text-xl font-semibold md:text-2xl">

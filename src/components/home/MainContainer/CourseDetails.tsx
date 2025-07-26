@@ -1,14 +1,10 @@
-import { FaCheck } from "react-icons/fa6";
+import { FaCheck } from 'react-icons/fa6';
 
-
-const requirements = [
-  "ইন্টারনেট সংযোগ (ওয়াইফাই বা মোবাইল ইন্টারনেট)",
-  "স্মার্টফোন অথবা পিসি",
-];
+const requirements = ['ইন্টারনেট সংযোগ (ওয়াইফাই বা মোবাইল ইন্টারনেট)', 'স্মার্টফোন অথবা পিসি'];
 
 const CourseDetails = () => {
   return (
-    <section id="requirements" className="my-6 md:mb-12 bg-[#E5E7EB] md:bg-white py-6 md:py-0">
+    <section id="requirements" className="my-6 md:mb-12 md:bg-white py-6 md:py-0">
       <div className="bg-white pb-6 md:pb-0">
         <h2 className="mb-4 text-xl font-semibold md:text-2xl">Course details</h2>
         <div className="rounded-md md:border md:p-6 py-2">

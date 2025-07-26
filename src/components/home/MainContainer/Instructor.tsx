@@ -4,7 +4,7 @@ import React from 'react';
 
 const Instructor: React.FC = () => {
   return (
-    <div id="instructors">
+    <div id="instructors" className='mb-6 md:mb-10 bg-[#E5E7EB] md:bg-white mt-8 lg:mt-0 pt-2 lg:pt-0 lg:py-6 md:py-0'>
       <div className="mb-7 xs:bg-[#EEF2F4] xs:pt-2">
         <div className="pt-4 pb-2 bg-white">
           <h2 className="mb-4 text-xl font-semibold md:text-2xl">Course instructor</h2>

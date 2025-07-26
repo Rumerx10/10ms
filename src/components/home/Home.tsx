@@ -1,6 +1,7 @@
-import React from 'react'
-import Hero from './Hero/Hero'
-import MainContainer from './MainContainer/MainContainer'
+import React from 'react';
+import Hero from './Hero/Hero';
+import MainContainer from './MainContainer/MainContainer';
+
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <Hero />
       <MainContainer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

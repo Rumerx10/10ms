@@ -1,16 +1,23 @@
 import Image from 'next/image';
 import Trailer from './Trailer/Trailer';
-
+import TrailerVideo from './Trailer/TrailerCarousel';
+import CheckLists from './Trailer/CheckLists';
+import CtaContent from './Trailer/CtaContent';
 
 const Hero = () => {
   return (
-    <section className="w-full pt-16">
-      <div className="relative  flex items-center justify-center w-full h-[300px]">
+    <section className="w-full h-auto pt-16">
+      <div className="relative flex items-center justify-center w-full h-[600px] md:h-[300px]">
         <Image src="/bgImage.jpeg" className="object-cover" alt="hero background image" fill />
-        <div className="absolute container w-full h-52">
-          <div className="flex flex-col justify-center max-w-[720px] w-full text-white">
-            <h1 className="text-4xl mb-2">IELTS Course by Munzereen Shahid</h1>
-            <div className="flex gap-2 items-center mb-2">
+        <div className="absolute container flex-col justify-between  w-full h-[572px] lg:h-52">
+          <div className="md:hidden text-white text-2xl mt-4">
+            <TrailerVideo />
+          </div>
+          <div className="flex flex-col justify-center md:max-w-[504px] lg:max-w-[720px] h-full w-full text-white">
+            <p className="text-[22px] font-bold lg:text-4xl mb-2">
+              IELTS Course by Munzereen Shahid
+            </p>
+            <div className="flex flex-col lg:flex-row gap-2 items-start lg:items-center mb-2">
               <div className="flex w-[100px] md:w-[130px]">
                 <Image src="/star.jpeg" alt="star" width={130} height={24} />
               </div>
@@ -24,6 +31,12 @@ const Hero = () => {
           </div>
           <Trailer />
         </div>
+      </div>
+      <div className="md:hidden h-[456px] w-full">
+        <div className='p-4'>
+          <CtaContent />
+        </div>
+        <CheckLists />
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import Contact from './Hero/Trailer/Contact';
 
 const AboutCourse = () => {
   return (
-    <div className='w-[398px]'>
+    <div className='w-full'>
       <div className="md:border">
         <Cta />
         <CheckLists />

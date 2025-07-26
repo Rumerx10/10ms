@@ -36,7 +36,7 @@ const Footer = () => {
     footerLinks[section].map(({ label, href }, idx) =>
       href.startsWith("/") ? (
         <li key={idx}>
-          <Link href={href} className="mb-2 text-sm font-medium hover:text-green-600 md:text-base">
+          <Link href={href} className="mb-2 text-sm md:text-base font-medium hover:text-green-600 text-[#525252]">
             {label}
           </Link>
         </li>
@@ -46,7 +46,7 @@ const Footer = () => {
             href={href}
             target="_blank"
             rel="noreferrer"
-            className="mb-2 text-sm font-medium hover:text-green-600 md:text-black"
+            className="mb-2 text-sm md:text-base font-medium hover:text-green-600 text-[#525252]"
           >
             {label}
           </a>
@@ -122,13 +122,13 @@ const Footer = () => {
           {/* Right */}
           <div className="flex flex-col w-full ml-0 md:ml-4">
             <div className="hidden md:block">
-              <h3 className="mb-3 text-base font-semibold md:text-xl md:font-bold">
+              <h3 className="mb-3 text-[#111827] text-base font-semibold md:text-xl md:font-bold">
                 Keep up with us at
               </h3>
-              <p className="mb-4 text-base font-normal">
+              <p className="mb-4 text-[#111827] text-base font-normal">
                 Call Us: <a className="text-green-600" href="tel:16910">16910</a> (24x7)
               </p>
-              <p className="mb-4 text-base font-normal">
+              <p className="mb-4 text-[#111827] text-base font-normal">
                 WhatsApp:{" "}
                 <a
                   className="text-green-600"
@@ -140,10 +140,10 @@ const Footer = () => {
                 </a>{" "}
                 (24x7)
               </p>
-              <p className="mb-4 text-base font-normal">
+              <p className="mb-4 text-[#111827] text-base font-normal">
                 Outside Bangladesh: <a className="text-green-600" href="tel:+8809610916910">+880 9610916910</a>
               </p>
-              <p className="mb-2 text-base font-normal">
+              <p className="mb-2 text-[#111827] text-base font-normal">
                 Email Us: <span className="text-green-600">support@10minuteschool.com</span>
               </p>
             </div>

@@ -27,7 +27,7 @@ const IeltsScoreGuideline = () => {
           <p className="mt-2 text-base text-[#ededed]">
             IELTS ভালো score করার সেরা Strategies জানুন সেরাদের গাইডলাইনে ।
           </p>
-          <button className="mt-6 bg-white text-black text-sm font-medium px-5 py-2 rounded hover:bg-gray-200 transition">
+          <button className="mt-6 text-center text-white py-2 px-5 duration-300 cursor-pointer bg-[#1cab55] hover:bg-[#14773b] border-b-3 border-[#14773b] rounded-md">
             ফ্রি PDF Download করুন
           </button>
         </div>

@@ -57,7 +57,7 @@ const SectionSwitch = () => {
         </div>
         {/* Right arrow */}
         <div
-          className={`absolute z-50 bg-gray-500  rounded-full -right-10 top-1/2 -translate-y-1/2 ${
+          className={`absolute z-50 bg-gray-400  rounded-full -right-10 top-1/2 -translate-y-1/2 ${
             scrollIndex === 7 ? 'pointer-events-none opacity-10' : ''
           } hidden xl:block cursor-pointer`}
           onClick={() => handleScroll('right')}
@@ -67,7 +67,7 @@ const SectionSwitch = () => {
 
         {/* Left arrow */}
         <div
-          className={`absolute z-50 bg-gray-500  rounded-full -left-10 top-1/2 -translate-y-1/2  ${
+          className={`absolute z-50 bg-gray-400  rounded-full -left-10 top-1/2 -translate-y-1/2  ${
             scrollIndex === 0 ? 'pointer-events-none opacity-10' : ''
           } hidden xl:block cursor-pointer`}
           onClick={() => handleScroll('left')}

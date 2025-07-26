@@ -6,7 +6,7 @@ const VideoPlayer = ({ videoId, videoPoster }: { videoId: string; videoPoster: s
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="w-full lg:w-full h-full overflow-hidden relative group">
+    <div className="w-full lg:w-full h-full overflow-hidden relative">
       {!isPlaying ? (
         <>
           <div
@@ -18,7 +18,7 @@ const VideoPlayer = ({ videoId, videoPoster }: { videoId: string; videoPoster: s
           <img
             src={videoPoster || 'placeholder.svg'}
             alt="Video Poster"
-            className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-300 ease-in-out"
           />
         </>
       ) : (

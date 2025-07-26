@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Link from 'next/link';
 
 const tabs = [
   { id: 'instructors', label: 'Course instructor' },
@@ -38,19 +37,18 @@ const SectionSwitch = () => {
   };
 
   return (
-    <div className="sticky top-[65px] z-20 hidden bg-white md:block">
+    <section className="sticky top-[65px] z-20 hidden bg-white md:block">
       <div className="relative w-full">
         <div id="section-tabs" className="relative flex flex-nowrap overflow-hidden scroll-smooth">
           <ul className="flex py-2 my-2 gap-4 px-4 border-b w-full min-w-max">
             {tabs.map((tab, idx) => (
-              <li key={idx} className="snap-start shrink-0">
-                <Link
-                  href={`#${tab.id}`}
+              <li key={idx} className="cursor-pointer">
+                <a
                   className={`p-2 border-b-2 ${idx === selectedTab ? 'border-[#1cab55]' : 'border-transparent'}  text-base text-gray-600 whitespace-nowrap hover:text-black`}
                   onClick={() => handleTabClick(tab.id, idx)}
                 >
                   {tab.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -75,7 +73,7 @@ const SectionSwitch = () => {
           <ChevronLeft className="w-8 h-8 text-white" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

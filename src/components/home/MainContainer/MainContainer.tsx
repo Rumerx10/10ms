@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Instructor from './Instructor';
 import HowTheCourseLaidOut from './HowTheCourseLaidOut';
 import Learnings from './Learnings';
-import CourseExclusiveFeatures from './CourseExclusiveFeatures';
+import CourseExclusiveFeatures from './CourseExclusiveFeature/CourseExclusiveFeatures';
 import CourseDetails from './CourseDetails';
 import SectionSwitch from './SectionSwitch';
 import AboutCourse from '../AboutCourse';

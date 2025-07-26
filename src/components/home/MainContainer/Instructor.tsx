@@ -4,8 +4,8 @@ import React from 'react';
 
 const Instructor: React.FC = () => {
   return (
-    <div id="instructors" className='mb-6 md:mb-10 bg-[#E5E7EB] md:bg-white mt-8 lg:mt-0 pt-2 lg:pt-0 lg:py-6 md:py-0'>
-      <div className="mb-7 xs:bg-[#EEF2F4] xs:pt-2">
+    <section id="instructors" className='scroll-mt-[100px] mb-6 md:mb-10 lg:mb-0 bg-[#E5E7EB] md:bg-white mt-8 lg:mt-0 pt-2 lg:pt-0 lg:py-6 md:py-0'>
+      <div className="xs:bg-[#EEF2F4] xs:pt-2">
         <div className="pt-4 pb-2 bg-white">
           <h2 className="mb-4 text-xl font-semibold md:text-2xl">Course instructor</h2>
           <div className="flex items-center md:rounded-md md:border md:p-5">
@@ -41,7 +41,7 @@ const Instructor: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

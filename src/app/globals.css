@@ -67,7 +67,10 @@
 body {
   font-family: var(--font-inter);
   overflow-x: hidden;
-  /* background-color: var(--color-bgGray); */
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 100px;
 }
 h1,
 h2,
@@ -75,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-poppins);
+  font-family: var(--font-inter);
   font-weight: 700;
 }
 .container {

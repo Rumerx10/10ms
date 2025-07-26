@@ -23,17 +23,17 @@ const Learnings = () => {
 
           <div className="rounded-md md:border">
             <div className="pt-2 md:p-6">
-              <ul className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4">
+              <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4">
                 {pointers.map((point, index) => (
-                  <li key={index} className="flex items-start gap-2 mb-2">
+                  <div key={index} className="flex items-start gap-2 mb-2">
                     <FaCheck
                       size={20}
                       className="text-[#6294F8] mt-[2px] shrink-0"
                     />
                     <div className="flex-1">{point}</div>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
 

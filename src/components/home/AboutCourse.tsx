@@ -5,9 +5,11 @@ import Contact from './Hero/Trailer/Contact';
 
 const AboutCourse = () => {
   return (
-    <div className='w-full'>
+    <div className="w-full">
       <div className="md:border">
-        <Cta />
+        <div className="md:hidden lg:block">
+          <Cta />
+        </div>
         <CheckLists />
       </div>
       <Contact />

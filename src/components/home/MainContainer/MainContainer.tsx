@@ -49,7 +49,7 @@ const MainContainer = () => {
             showSidebar ? 'opacity-100' : 'opacity-0 pointer-events-none'
           }`}
         >
-          <div className="sticky top-[100px]">
+          <div className="sticky md:top-[200px] lg:top-[100px]  ">
             <AboutCourse />
           </div>
         </div>
